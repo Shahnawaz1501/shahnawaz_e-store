@@ -1,0 +1,52 @@
+  @import "../../css-config/mixins.scss";
+
+.carousel-container {
+  width: 580px;
+  margin-bottom: 20px;
+  
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.carousel {
+  .thumbs-wrapper {
+    display: none;
+  }
+
+  .slide img {
+    cursor: pointer;
+  }
+}
+
+.image-list {
+  display: flex;
+  
+  gap: 2px;
+  padding: 1px;
+  margin-right: 60px;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+
+  @media screen and (max-width: 768px) {
+    overflow-x: scroll;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+   
+  }
+}
+
+.big-image-container {
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
